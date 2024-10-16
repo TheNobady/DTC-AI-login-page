@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTC Login Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dark-mode-toggle">
+        <button id="darkModeToggle">🌙</button>
+    </div>
+    <div class="login-container">
+        <h1>DTC LOGIN PORTAL</h1>
+        <form class="login-form">
+            <div class="input-group">
+                <label for="username">Enter Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group password-group">
+                <label for="password">Enter Password:</label>
+                <input type="password" id="password" name="password" required>
+                <span class="toggle-password" id="togglePassword">👁️</span>
+            </div>
+            <button type="submit" class="signin-btn">Sign In</button>
+            <div class="social-login">
+                <p>Or sign in with:</p>
+                <button class="social-btn google"><img src="google-logo.png" alt="Google"> Google</button>
+                <button class="social-btn phone"><img src="phone-logo.png" alt="Phone"> Phone Number</button>
+                <button class="social-btn facebook"><img src="facebook-logo.png" alt="Facebook"> Facebook</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

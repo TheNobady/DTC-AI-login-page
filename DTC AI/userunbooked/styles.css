@@ -1,0 +1,180 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #0047ab;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+}
+
+nav .left .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+nav .left h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .center {
+    display: flex;
+    align-items: center;
+}
+
+nav .center label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: white;
+}
+
+nav .center input {
+    margin: 0 10px;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 150px;
+}
+
+nav .center input::placeholder {
+    color: #aaa;
+}
+
+nav .center #search-btn {
+    background-color: #ff9900;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .center #search-btn:hover {
+    background-color: #e68a00;
+}
+
+nav .right button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav .right button:hover {
+    color: #ff9900;
+}
+
+/* Main Content */
+main {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h2 {
+    font-size: 28px;
+    color: #0047ab;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bus-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.bus {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bus:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bus h3 {
+    font-size: 20px;
+    margin-top: 0;
+    color: #0047ab;
+}
+
+.bus p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.book-btn, .route-btn {
+    background-color: #0047ab;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.book-btn:hover, .route-btn:hover {
+    background-color: #003b8a;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0047ab;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.dark-mode nav {
+    background-color: #222;
+}
+
+.dark-mode .bus {
+    background-color: #444;
+}
+
+.dark-mode footer {
+    background-color: #222;
+}

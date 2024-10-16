@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img src="bus-logo.png" alt="Bus Logo" class="logo">
+            <h1>DTC</h1>
+        </div>
+        <div class="center">
+            <label for="to-city">TO</label>
+            <input type="text" placeholder="Enter destination city" id="to-city">
+            <label for="from-city">FROM</label>
+            <input type="text" placeholder="Enter departure city" id="from-city">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="right">
+            <button id="dark-mode-toggle">🌙</button>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Available Buses</h2>
+        <div class="bus-list">
+            <!-- Bus 1 -->
+            <div class="bus">
+                <h3>GreenLine Express</h3>
+                <p>Route: New York to Washington D.C.</p>
+                <p>Price: $45</p>
+                <p>Time: 8:00 AM</p>
+                <p>Fare: Economy</p>
+                <button class="book-btn">BOOK TICKET</button>
+                <button class="route-btn">SHOW ROUTE</button>
+            </div>
+            <!-- Bus 2 -->
+            <div class="bus">
+                <h3>BlueSky Travels</h3>
+                <p>Route: Los Angeles to San Francisco</p>
+                <p>Price: $55</p>
+                <p>Time: 9:30 AM</p>
+                <p>Fare: Business</p>
+                <button class="book-btn">BOOK TICKET</button>
+                <button class="route-btn">SHOW ROUTE</button>
+            </div>
+            <!-- Bus 3 -->
+            <div class="bus">
+                <h3>RedLine Adventures</h3>
+                <p>Route: Miami to Orlando</p>
+                <p>Price: $35</p>
+                <p>Time: 7:00 AM</p>
+                <p>Fare: Economy</p>
+                <button class="book-btn">BOOK TICKET</button>
+                <button class="route-btn">SHOW ROUTE</button>
+            </div>
+            <!-- Bus 4 -->
+            <div class="bus">
+                <h3>SilverWings</h3>
+                <p>Route: Seattle to Portland</p>
+                <p>Price: $40</p>
+                <p>Time: 10:00 AM</p>
+                <p>Fare: Business</p>
+                <button class="book-btn">BOOK TICKET</button>
+                <button class="route-btn">SHOW ROUTE</button>
+            </div>
+            <!-- Bus 5 -->
+            <div class="bus">
+                <h3>GoldenGate Express</h3>
+                <p>Route: San Diego to Las Vegas</p>
+                <p>Price: $60</p>
+                <p>Time: 11:30 AM</p>
+                <p>Fare: Luxury</p>
+                <button class="book-btn">BOOK TICKET</button>
+                <button class="route-btn">SHOW ROUTE</button>
+            </div>
+            <!-- Bus 6 -->
+            <div class="bus">
+                <h3>YellowStar Travels</h3>
+                <p>Route: Chicago to Detroit</p>
+                <p>Price: $50</p>
+                <p>Time: 12:00 PM</p>
+                <p>Fare: Business</p>
+                <button class="book-btn">BOOK TICKET</button>
+                <button class="route-btn">SHOW ROUTE</button>
+            </div>
+            <!-- Bus 7 -->
+            <div class="bus">
+                <h3>PurpleLine Shuttle</h3>
+                <p>Route: Houston to Dallas</p>
+                <p>Price: $30</p>
+                <p>Time: 1:00 PM</p>
+                <p>Fare: Economy</p>
+                <button class="book-btn">BOOK TICKET</button>
+                <button class="route-btn">SHOW ROUTE</button>
+            </div>
+            <!-- Bus 8 -->
+            <div class="bus">
+                <h3>OrangeRoad Express</h3>
+                <p>Route: Denver to Salt Lake City</p>
+                <p>Price: $70</p>
+                <p>Time: 2:00 PM</p>
+                <p>Fare: Luxury</p>
+                <button class="book-btn">BOOK TICKET</button>
+                <button class="route-btn">SHOW ROUTE</button>
+            </div>
+            <!-- Bus 9 -->
+            <div class="bus">
+                <h3>PinkLine Travels</h3>
+                <p>Route: Boston to New York</p>
+                <p>Price: $40</p>
+                <p>Time: 3:00 PM</p>
+                <p>Fare: Economy</p>
+                <button class="book-btn">BOOK TICKET</button>
+                <button class="route-btn">SHOW ROUTE</button>
+            </div>
+            <!-- Bus 10 -->
+            <div class="bus">
+                <h3>WhiteStar Adventures</h3>
+                <p>Route: Philadelphia to Baltimore</p>
+                <p>Price: $50</p>
+                <p>Time: 4:30 PM</p>
+                <p>Fare: Business</p>
+                <button class="book-btn">BOOK TICKET</button>
+                <button class="route-btn">SHOW ROUTE</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DTC. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

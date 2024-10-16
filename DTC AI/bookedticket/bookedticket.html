@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booked Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <img src="logo.png" alt="DTC Logo" class="logo">
+            <span class="dtc-title">DTC</span>
+        </div>
+        <div class="nav-right">
+            <a href="#" class="book-ticket-link">Book Ticket</a>
+            <button id="darkModeToggle" class="dark-mode-icon">🌙</button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="ticket-box">
+            <h2>Ticket Status</h2>
+            <ul>
+                <li><strong>Bus Name:</strong> Random Bus 1</li>
+                <li><strong>Time:</strong> 10:00 AM</li>
+                <li><strong>Price:</strong> $15</li>
+                <li><strong>Booked:</strong> Yes</li>
+                <li><strong>Bus Stand Name:</strong> Stand A</li>
+                <button class="route-btn">See Route</button>
+            </ul>
+          
+            <!-- Add more tickets as needed -->
+        </div>
+
+        <div class="right-section">
+            <div class="current-location">
+                <h2>Current Location: Downtown</h2>
+                <p>Time left to destination: <span id="timer">70 min</span></p>
+            </div>
+
+            <div class="bus-detail">
+                <h2>Bus Detail</h2>
+                <ul>
+                    <li><strong>Owner Name:</strong> John Doe</li>
+                    <li><strong>Bus Number:</strong> ABC-1234</li>
+                    <li><strong>Crew Names:</strong> Jane Smith, Alex Brown</li>
+                </ul>
+            </div>
+        </div>
+        <button class="order-food">Order Food</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
